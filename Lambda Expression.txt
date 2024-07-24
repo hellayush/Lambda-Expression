@@ -1,0 +1,57 @@
+Q1 - What is lambda Expression in java 8 ?
+
+ANS - Lambda expressions, introduced in Java 8, provide a concise way to write anonymous functions. They offer a cleaner syntax compared to traditional anonymous inner classes, making your code more readable and often less verbose.
+
+Here's a breakdown of key aspects of lambda expressions:
+
+Structure:
+
+A lambda expression consists of three parts:
+
+Optional Parameters: A comma-separated list of parameters enclosed in parentheses. If there are no parameters, you can leave the parentheses empty.
+Arrow (->): This symbol separates the parameters from the function body.
+Function Body: The code that defines what the lambda expression will do. This can be a single expression or a block of code enclosed in curly braces {}.
+
+Q2 - Can you pass a lambda expression in a method ? When ?
+
+ANS - Yes , we can use lambda expression in a method . This functionality is a core aspect of lambda expressions and supports functional programming concepts.
+
+Key Requirements:
+
+Method Parameter Type: The method parameter you're passing the lambda expression to must have a type that is a functional interface. A functional interface is an interface that has only one abstract method. This method's signature (parameter types and return type) should match the signature of the lambda expression you're passing.
+
+Q3 - What is functional interface in java 8 ?
+
+ANS - In Java 8, functional interfaces are a key concept that enables functional programming paradigms within the object-oriented world of Java. Here's a breakdown of what they are and how they work:
+
+ * Functionality :
+
+A functional interface is an interface that has only one abstract method. This single method defines the functionality that can be implemented by a class or a lambda expression.
+It's often denoted by the @FunctionalInterface annotation (though not mandatory for the interface to be functional). This annotation helps the compiler identify and potentially enforce the single-abstract-method rule.
+
+Q4 - Why do we use lambda expression in Java 8 ?
+
+ANS - There are several advantages to using lambda expressions in Java 8:
+
+Improved Code Readability:
+
+Lambda expressions often make code more concise and easier to understand, especially for short, well-defined functions.
+They eliminate the boilerplate code required for anonymous inner classes, which can be verbose and clutter the code.
+
+Reduced Verbosity:
+
+Compared to traditional anonymous inner classes, lambda expressions offer a more compact way to write anonymous functions.
+This can lead to cleaner and less cluttered code, especially when dealing with simple operations.
+
+Q5 - Is it mandatory for lambda expression to have parameters ?
+
+ANS - No, it is not mandatory for lambda expressions in Java 8 to have parameters. Lambda expressions can take zero, one, or multiple parameters.
+
+Here are the different scenarios:
+
+Zero Parameters:
+If a lambda expression doesn't take any arguments, you can simply leave the parentheses empty. This type of lambda expression is often used when you need to perform a specific action without any input data.
+One Parameter:
+Lambda expressions can also take a single argument. The parameter is enclosed in parentheses, followed by the arrow (->) and the function body.
+Multiple Parameters:
+You can have multiple parameters in a lambda expression, separated by commas within the parentheses.
